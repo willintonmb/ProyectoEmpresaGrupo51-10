@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\Dominio\\Dominio.csproj": {}
+    "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\Dominio\\Dominio.csproj": {}
   },
   "projects": {
-    "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\Dominio\\Dominio.csproj": {
+    "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\Dominio\\Dominio.csproj",
+        "projectPath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\Dominio\\Dominio.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\Dominio\\obj\\",
+        "outputPath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

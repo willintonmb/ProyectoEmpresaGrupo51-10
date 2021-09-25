@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uA8Ep8cJtS0ntfNTNzcUeRsk14RPfBMsZ36x6zPkT7kdr77SDl5gQ+a5IT1+SZXhWnI+9qUJg1skuTjD3tPWWw==",
+  "dgSpecHash": "s9r5KUoT5757Xvau+6T8McabQSOKL5KCIllqjpnKUiFy8UUTp4r1OInmdOyIhyCbrPWJ21AUBPFxXrxaOGAftQ==",
   "success": true,
-  "projectFilePath": "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\Persistencia\\Persistencia.csproj",
+  "projectFilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\Persistencia\\Persistencia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
