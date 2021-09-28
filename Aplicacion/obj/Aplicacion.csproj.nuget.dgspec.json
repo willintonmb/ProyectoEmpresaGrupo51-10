@@ -28,6 +28,9 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\Dominio\\Dominio.csproj"
+              },
               "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\Persistencia\\Persistencia.csproj": {
                 "projectPath": "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\Persistencia\\Persistencia.csproj"
               }

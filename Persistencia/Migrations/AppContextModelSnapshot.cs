@@ -44,6 +44,10 @@ namespace Persistencia.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Documento")
                         .HasColumnType("nvarchar(max)");
 
@@ -56,6 +60,8 @@ namespace Persistencia.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Personas");
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("Persona");
                 });
 
             modelBuilder.Entity("Dominio.Producto", b =>
@@ -74,6 +80,36 @@ namespace Persistencia.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Productos");
+                });
+
+            modelBuilder.Entity("Dominio.Cliente", b =>
+                {
+                    b.HasBaseType("Dominio.Persona");
+
+                    b.Property<string>("Telefono")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasDiscriminator().HasValue("Cliente");
+                });
+
+            modelBuilder.Entity("Dominio.Empleado", b =>
+                {
+                    b.HasBaseType("Dominio.Persona");
+
+                    b.Property<int>("Salario")
+                        .HasColumnType("int");
+
+                    b.HasDiscriminator().HasValue("Empleado");
+                });
+
+            modelBuilder.Entity("Dominio.Directivo", b =>
+                {
+                    b.HasBaseType("Dominio.Empleado");
+
+                    b.Property<int>("Categoria")
+                        .HasColumnType("int");
+
+                    b.HasDiscriminator().HasValue("Directivo");
                 });
 #pragma warning restore 612, 618
         }
