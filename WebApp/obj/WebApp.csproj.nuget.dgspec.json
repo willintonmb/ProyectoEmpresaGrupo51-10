@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\webapp\\WebApp.csproj": {}
+    "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\WebApp.csproj": {}
   },
   "projects": {
-    "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\webapp\\WebApp.csproj": {
+    "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\webapp\\WebApp.csproj",
+        "projectUniqueName": "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\WebApp.csproj",
         "projectName": "WebApp",
-        "projectPath": "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\webapp\\WebApp.csproj",
+        "projectPath": "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\WebApp.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\webapp\\obj\\",
+        "outputPath": "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
