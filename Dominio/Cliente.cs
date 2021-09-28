@@ -2,6 +2,6 @@ namespace Dominio
 {
     public class Cliente:Persona
     {
-        public int Categoria {get; set;}
+        public string Telefono {get; set;}
     }
 }
