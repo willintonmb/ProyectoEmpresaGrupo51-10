@@ -1,0 +1,16 @@
+﻿@page
+@model MyApp.Namespace.DirectivoModel
+@{
+}
+<h1>Listado de Directivos</h1>
+<table class ="Table">
+    @foreach (var directivo in Model.Directivos)
+    {
+        <tr>
+            <td>
+                @directivo
+            </td>
+
+        </tr>
+    }
+</table>

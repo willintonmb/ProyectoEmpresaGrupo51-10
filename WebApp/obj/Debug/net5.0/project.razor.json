@@ -15634,8 +15634,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Entities\\Producto\\Producto.cshtml",
+      "TargetPath": "Pages\\Entities\\Producto\\Producto.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Index.cshtml",
       "TargetPath": "Pages\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Entities\\Directivo\\Directivo.cshtml",
+      "TargetPath": "Pages\\Entities\\Directivo\\Directivo.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Entities\\Empresa\\Empresa.cshtml",
+      "TargetPath": "Pages\\Entities\\Empresa\\Empresa.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15646,6 +15661,16 @@
     {
       "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Privacy.cshtml",
       "TargetPath": "Pages\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Entities\\Empleado\\Empleado.cshtml",
+      "TargetPath": "Pages\\Entities\\Empleado\\Empleado.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Entities\\Cliente\\Cliente.cshtml",
+      "TargetPath": "Pages\\Entities\\Cliente\\Cliente.cshtml",
       "FileKind": "mvc"
     },
     {

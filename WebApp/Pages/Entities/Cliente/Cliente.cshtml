@@ -1,0 +1,16 @@
+﻿@page
+@model MyApp.Namespace.ClienteModel
+@{
+}
+<h1>Listado de Clientes</h1>
+<table class ="Table">
+    @foreach (var cliente in Model.Clientes)
+    {
+        <tr>
+            <td>
+                @cliente
+            </td>
+
+        </tr>
+    }
+</table>

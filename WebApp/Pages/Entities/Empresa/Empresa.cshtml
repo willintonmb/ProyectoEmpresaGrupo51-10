@@ -1,0 +1,16 @@
+﻿@page
+@model MyApp.Namespace.EmpresaModel
+@{
+}
+<h1>Listado de Empresas</h1>
+<table class ="Table">
+    @foreach (var empresa in Model.Empresas)
+    {
+        <tr>
+            <td>
+                @empresa
+            </td>
+
+        </tr>
+    }
+</table>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qM1g3g4Vmxn2CCCGBQ6L5GcZK7RXG8MdzHmq16QvEUsYxtFL72uQ2nzvrrd6kvovJ1n4QTK7A4FpsYxv1tdVLQ==",
+  "dgSpecHash": "Z2SXjiUpCvYLxt2eUvhAyAShNDsxj9gS6TWWPGWKPf1ND3l7N56RtrLJf3EvT92W53xyE1gp4wLPcghOD3Tx4Q==",
   "success": true,
-  "projectFilePath": "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\WebApp.csproj",
+  "projectFilePath": "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\webapp\\WebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

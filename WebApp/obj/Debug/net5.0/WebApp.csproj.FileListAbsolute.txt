@@ -70,3 +70,8 @@ C:\Repositorio Mintic\Ciclo 3\Proyecto Ciclo 3\WebApp\bin\Debug\net5.0\Dominio.d
 C:\Repositorio Mintic\Ciclo 3\Proyecto Ciclo 3\WebApp\bin\Debug\net5.0\Persistencia.dll
 C:\Repositorio Mintic\Ciclo 3\Proyecto Ciclo 3\WebApp\bin\Debug\net5.0\Dominio.pdb
 C:\Repositorio Mintic\Ciclo 3\Proyecto Ciclo 3\WebApp\bin\Debug\net5.0\Persistencia.pdb
+C:\Repositorio Mintic\Ciclo 3\Proyecto Ciclo 3\webapp\obj\Debug\net5.0\Razor\Pages\Entities\Cliente\Cliente.cshtml.g.cs
+C:\Repositorio Mintic\Ciclo 3\Proyecto Ciclo 3\webapp\obj\Debug\net5.0\Razor\Pages\Entities\Directivo\Directivo.cshtml.g.cs
+C:\Repositorio Mintic\Ciclo 3\Proyecto Ciclo 3\webapp\obj\Debug\net5.0\Razor\Pages\Entities\Empleado\Empleado.cshtml.g.cs
+C:\Repositorio Mintic\Ciclo 3\Proyecto Ciclo 3\webapp\obj\Debug\net5.0\Razor\Pages\Entities\Empresa\Empresa.cshtml.g.cs
+C:\Repositorio Mintic\Ciclo 3\Proyecto Ciclo 3\webapp\obj\Debug\net5.0\Razor\Pages\Entities\Producto\Producto.cshtml.g.cs
