@@ -12,15 +12,15 @@ namespace MyApp.Namespace
 {
     public class ProductoModel : PageModel
     {
-        private readonly IProductoRepository productoRepository;
+        private readonly IProductoRepository _productoRepository;
         public IEnumerable<Producto> Productos {get; set;}
         public ProductoModel(IProductoRepository productoRepository)
         {
-            this.productoRepository = productoRepository;
+            _productoRepository = productoRepository;
         }
         public void OnGet()
         {
-            Productos = productoRepository.GetAllProductos();
+            Productos = _productoRepository.GetAllProductos();
         }
     }
 }

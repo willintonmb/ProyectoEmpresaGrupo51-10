@@ -8,9 +8,9 @@ namespace Persistencia.Repositorios
 {
     public class ProductoRepository : IProductoRepository
     {
-        private readonly AppContext _appContext;
+        private readonly AppDbContext _appContext;
 
-        public ProductoRepository(AppContext appContext)
+        public ProductoRepository(AppDbContext appContext)
         {
             _appContext = appContext;
         }

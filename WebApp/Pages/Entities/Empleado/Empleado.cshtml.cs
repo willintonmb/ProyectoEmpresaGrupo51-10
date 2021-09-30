@@ -12,15 +12,15 @@ namespace MyApp.Namespace
 {
     public class EmpleadoModel : PageModel
     {
-        private readonly IEmpleadoRepository empleadoRepository;
+        private readonly IEmpleadoRepository _empleadoRepository;
         public IEnumerable<Empleado> Empleados {get; set;}
         public EmpleadoModel(IEmpleadoRepository empleadoRepository)
         {
-            this.empleadoRepository = empleadoRepository;
+            _empleadoRepository = empleadoRepository;
         }
         public void OnGet()
         {
-            Empleados = empleadoRepository.GetAllEmpleado();
+            Empleados = _empleadoRepository.GetAllEmpleado();
         }
     }
 }

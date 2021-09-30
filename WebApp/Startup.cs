@@ -5,11 +5,13 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Persistencia.Interfaces;
 using Persistencia.Repositorios;
+using Persistencia;
 
 namespace WebApp
 {
@@ -25,11 +27,13 @@ namespace WebApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<IClienteRepository, ClienteRepository>();
-            services.AddTransient<IDirectivoRepository, DirectivoRepository>();
-            services.AddTransient<IEmpleadoRepository, EmpleadoRepository>();
-            services.AddTransient<IEmpresaRepository, EmpresaRepository>();
-            services.AddTransient<IProductoRepository, ProductoRepository>();
+            services.AddDbContext<AppDbContext>(option=>option.UseSqlServer(Configuration.GetConnectionString("connectionString")));
+
+            services.AddScoped<IClienteRepository, ClienteRepository>();
+            services.AddScoped<IDirectivoRepository, DirectivoRepository>();
+            services.AddScoped<IEmpleadoRepository, EmpleadoRepository>();
+            services.AddScoped<IEmpresaRepository, EmpresaRepository>();
+            services.AddScoped<IProductoRepository, ProductoRepository>();
             services.AddRazorPages();
         }
 

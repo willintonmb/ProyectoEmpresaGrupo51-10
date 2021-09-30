@@ -8,9 +8,9 @@ namespace Persistencia.Repositorios
 {
     public class DirectivoRepository : IDirectivoRepository
     {
-        private readonly AppContext _appContext;
+        private readonly AppDbContext _appContext;
 
-        public DirectivoRepository(AppContext appContext)
+        public DirectivoRepository(AppDbContext appContext)
         {
             _appContext = appContext;
         }

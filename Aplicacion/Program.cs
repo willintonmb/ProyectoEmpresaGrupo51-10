@@ -4,12 +4,13 @@ using System;
 using Dominio;
 using Persistencia.Interfaces;
 using Persistencia.Repositorios;
+using Persistencia;
 
 namespace Aplicacion
 {
     class Program
     {
-        private static IEmpleadoRepository empleadosRepository = new EmpleadoRepository(new Persistencia.AppContext());
+        private static IEmpleadoRepository empleadosRepository = new EmpleadoRepository(new AppDbContext());
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");

@@ -9,9 +9,9 @@ namespace Persistencia.Repositorios
 {
     public class ClienteRepository : IClienteRepository
     {
-        private readonly AppContext _appContext;
+        private readonly AppDbContext _appContext;
 
-        public ClienteRepository(AppContext appContext)
+        public ClienteRepository(AppDbContext appContext)
         {
             _appContext = appContext;
         }

@@ -12,15 +12,15 @@ namespace MyApp.Namespace
 {
     public class EmpresaModel : PageModel
     {
-        private readonly IEmpresaRepository empresaRepository;
+        private readonly IEmpresaRepository _empresaRepository;
         public IEnumerable<Empresa> Empresas {get; set;}
         public EmpresaModel(IEmpresaRepository empresaRepository)
         {
-            this.empresaRepository = empresaRepository;
+            _empresaRepository = empresaRepository;
         }
         public void OnGet()
         {
-            Empresas = empresaRepository.GetAllEmpresa();
+            Empresas = _empresaRepository.GetAllEmpresa();
         }
     }
 }

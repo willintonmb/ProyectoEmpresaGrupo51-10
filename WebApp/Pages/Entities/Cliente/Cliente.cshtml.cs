@@ -11,16 +11,16 @@ namespace MyApp.Namespace
 {
     public class ClienteModel : PageModel
     {
-        private readonly IClienteRepository clienteRepository;
+        private readonly IClienteRepository _clienteRepository;
         public ClienteModel(IClienteRepository clienteRepository)
         {
-            this.clienteRepository = clienteRepository;
+            _clienteRepository = clienteRepository;
         }
 
         public IEnumerable<Cliente> Clientes {get; set;}
         public void OnGet()
         {
-            Clientes = clienteRepository.GetAllClientes();
+            Clientes = _clienteRepository.GetAllClientes();
         }
     }
 }

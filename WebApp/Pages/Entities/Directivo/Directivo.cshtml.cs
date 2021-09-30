@@ -12,16 +12,16 @@ namespace MyApp.Namespace
 {
     public class DirectivoModel : PageModel
     {
-        private readonly IDirectivoRepository directivoRepository;
+        private readonly IDirectivoRepository _directivoRepository;
         public IEnumerable<Directivo> Directivos {get; set;}
         public DirectivoModel(IDirectivoRepository directivoRepository)
         {
-            this.directivoRepository = directivoRepository;
+            _directivoRepository = directivoRepository;
         }
 
         public void OnGet()
         {
-            Directivos = directivoRepository.GetAllDirectivos();
+            Directivos = _directivoRepository.GetAllDirectivos();
         }
     }
 }
