@@ -1,0 +1,39 @@
+﻿@page
+@model MyApp.Namespace.DetallesEmpleadoModel
+@{
+}
+<head>
+    <style>
+        tr {border-bottom: 1px solid #ddd;}
+    </style>
+</head>
+<body>
+    <h1>Listado de Empleados</h1>
+    <table style="width:100%" class ="Table">
+        <tr>
+            <th>Nombre</th>
+            <th>Documento</th>
+            <th>Edad</th>
+            <th>Salario</th>
+            <th>Fecha de Nacimiento</th>
+            <th>Editar</th>
+            <th>Eliminar</th>
+        </tr>
+        @foreach (var empleado in Model.Empleados)
+        {
+            <tr>
+                <td>@empleado.Nombre</td>
+                <td>@empleado.Documento</td>
+                <td>@empleado.Edad</td>
+                <td>@empleado.Salario</td>
+                <td>@empleado.FechaDeNacimiento</td>
+                <td><a href="/Entities/Empleado/Editar"><i class="fas fa-edit"></i></a></td>
+                <td><a href="/Entities/Empleado/Eliminar"><i class="far fa-trash-alt"></i></a></td>
+            </tr>
+        }
+    </table>
+    <div>
+        <br>
+        <a href="/Entities/Empleado/Crear">Crear Empleado</a>
+    </div>
+</body>

@@ -1,0 +1,38 @@
+﻿@page
+@model MyApp.Namespace.DetallesClienteModel
+@{
+}
+<head>
+    <style>
+        tr {border-bottom: 1px solid #ddd;}
+    </style>
+</head>
+<body>
+    <h1>Listado de Clientes</h1>
+    <table style="width:100%" class ="Table">
+
+        <tr>
+            <th>Nombre</th>
+            <th>Documento</th>
+            <th>Telefono</th>
+            <th>Editar</th>
+            <th>Eliminar</th>
+        </tr>
+
+        @foreach (var cliente in Model.Clientes)
+        {
+            <tr>
+                <td>@cliente.Nombre</td>
+                <td>@cliente.Documento</td>
+                <td>@cliente.Telefono</td>
+                <td><a href="/Entities/Cliente/Editar"><i class="fas fa-edit"></i></a></td>
+                <td><a href="/Entities/Cliente/Eliminar"><i class="far fa-trash-alt"></i></a></td>
+            </tr>
+        }
+    </table>
+
+    <div>
+        <br>
+        <a href="/Entities/Cliente/Crear">Crear Cliente</a>
+    </div>
+</body>

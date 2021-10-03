@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\WebApp.csproj": {}
+    "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\webapp\\WebApp.csproj": {}
   },
   "projects": {
     "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\Dominio\\Dominio.csproj": {
@@ -138,14 +138,14 @@
         }
       }
     },
-    "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\WebApp.csproj": {
+    "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\webapp\\WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\WebApp.csproj",
+        "projectUniqueName": "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\webapp\\WebApp.csproj",
         "projectName": "WebApp",
-        "projectPath": "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\WebApp.csproj",
+        "projectPath": "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\webapp\\WebApp.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\obj\\",
+        "outputPath": "C:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\webapp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -185,7 +185,7 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.10, )"
+              "version": "[5.0.0, )"
             }
           },
           "imports": [

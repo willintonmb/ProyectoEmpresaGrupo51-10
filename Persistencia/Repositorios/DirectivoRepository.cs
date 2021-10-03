@@ -8,9 +8,9 @@ namespace Persistencia.Repositorios
 {
     public class DirectivoRepository : IDirectivoRepository
     {
-        private readonly AppDbContext _appContext;
+        private readonly AppContext _appContext;
 
-        public DirectivoRepository(AppDbContext appContext)
+        public DirectivoRepository(AppContext appContext)
         {
             _appContext = appContext;
         }
@@ -51,7 +51,7 @@ namespace Persistencia.Repositorios
                 directivoEncontrado.Nombre = directivo.Nombre;
                 directivoEncontrado.Documento = directivo.Documento;
                 directivoEncontrado.Categoria = directivo.Categoria;
-                directivoEncontrado.fechaDeNacimiento = directivo.fechaDeNacimiento;
+                directivoEncontrado.FechaDeNacimiento = directivo.FechaDeNacimiento;
                 directivoEncontrado.Salario = directivo.Salario;
                 _appContext.SaveChanges();
             }

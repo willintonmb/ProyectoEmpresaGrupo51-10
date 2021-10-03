@@ -1,10 +1,9 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Dominio;
 
 namespace Persistencia
 {
-    public class AppDbContext : DbContext
+    public class AppContext : DbContext
     {
         public DbSet<Cliente> Clientes {get; set;}
         public DbSet<Directivo> Directivos {get; set;}
@@ -13,11 +12,15 @@ namespace Persistencia
         public DbSet<Empresa> Empresas {get; set;}
         public DbSet<Producto> Productos {get; set;}
    
-        public AppDbContext(DbContextOptions<AppDbContext>options):base(options)
+        public AppContext(DbContextOptions<AppContext>options):base(options)
         {
             
         }
-        public AppDbContext()
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        { 
+            optionsBuilder.UseSqlServer("Data Source=DESKTOP-KCG6U4C\\SQLEXPRESS;Initial Catalog = Proyecto Ciclo 3;Integrated Security = True; MultipleActiveResultSets=true");
+        }
+        public AppContext()
         {
             
         }

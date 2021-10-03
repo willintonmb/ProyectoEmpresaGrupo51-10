@@ -8,9 +8,9 @@ namespace Persistencia.Repositorios
 {
     public class EmpleadoRepository : IEmpleadoRepository
     {
-        private readonly AppDbContext _appContext;
+        private readonly AppContext _appContext;
 
-        public EmpleadoRepository(AppDbContext appContext)
+        public EmpleadoRepository(AppContext appContext)
         {
             _appContext = appContext;
         }
@@ -50,7 +50,7 @@ namespace Persistencia.Repositorios
             {
                 empleadoEncontrado.Nombre = empleado.Nombre;
                 empleadoEncontrado.Documento = empleado.Documento;
-                empleadoEncontrado.fechaDeNacimiento = empleado.fechaDeNacimiento;
+                empleadoEncontrado.FechaDeNacimiento = empleado.FechaDeNacimiento;
                 empleadoEncontrado.Salario = empleado.Salario;
                 _appContext.SaveChanges();
             }

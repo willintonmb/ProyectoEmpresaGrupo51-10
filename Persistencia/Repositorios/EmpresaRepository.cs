@@ -8,9 +8,9 @@ namespace Persistencia.Repositorios
 {
     public class EmpresaRepository : IEmpresaRepository
     {
-        private readonly AppDbContext _appContext;
+        private readonly AppContext _appContext;
 
-        public EmpresaRepository(AppDbContext appContext)
+        public EmpresaRepository(AppContext appContext)
         {
             _appContext = appContext;
         }

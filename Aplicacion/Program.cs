@@ -10,7 +10,7 @@ namespace Aplicacion
 {
     class Program
     {
-        private static IEmpleadoRepository empleadosRepository = new EmpleadoRepository(new AppDbContext());
+        private static IEmpleadoRepository empleadosRepository = new EmpleadoRepository(new Persistencia.AppContext());
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
@@ -32,7 +32,7 @@ namespace Aplicacion
                 Nombre = "Paula Betancourt",
                 Salario = 1400000,
                 Documento = "15423695",
-                fechaDeNacimiento = DateTime.Now.AddYears(-19)
+                FechaDeNacimiento = DateTime.Now.AddYears(-19)
             };
             return empleadosRepository.AddEmpleado(nuevoEmpleado);
         }

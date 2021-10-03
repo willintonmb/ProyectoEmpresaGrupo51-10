@@ -15619,8 +15619,18 @@
   "RootNamespace": "WebApp",
   "Documents": [
     {
+      "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Entities\\Empresa\\Detalles.cshtml",
+      "TargetPath": "Pages\\Entities\\Empresa\\Detalles.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Shared\\_Layout.cshtml",
       "TargetPath": "Pages\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Entities\\Empleado\\Detalles.cshtml",
+      "TargetPath": "Pages\\Entities\\Empleado\\Detalles.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15634,8 +15644,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Entities\\Producto\\Producto.cshtml",
-      "TargetPath": "Pages\\Entities\\Producto\\Producto.cshtml",
+      "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Entities\\Directivo\\Editar.cshtml",
+      "TargetPath": "Pages\\Entities\\Directivo\\Editar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Entities\\Empleado\\Eliminar.cshtml",
+      "TargetPath": "Pages\\Entities\\Empleado\\Eliminar.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15644,13 +15659,43 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Entities\\Directivo\\Directivo.cshtml",
-      "TargetPath": "Pages\\Entities\\Directivo\\Directivo.cshtml",
+      "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Entities\\Directivo\\Eliminar.cshtml",
+      "TargetPath": "Pages\\Entities\\Directivo\\Eliminar.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Entities\\Empresa\\Empresa.cshtml",
-      "TargetPath": "Pages\\Entities\\Empresa\\Empresa.cshtml",
+      "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Entities\\Cliente\\Eliminar.cshtml",
+      "TargetPath": "Pages\\Entities\\Cliente\\Eliminar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Entities\\Producto\\Eliminar.cshtml",
+      "TargetPath": "Pages\\Entities\\Producto\\Eliminar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Entities\\Producto\\Editar.cshtml",
+      "TargetPath": "Pages\\Entities\\Producto\\Editar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Entities\\Directivo\\Detalles.cshtml",
+      "TargetPath": "Pages\\Entities\\Directivo\\Detalles.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Entities\\Cliente\\Detalles.cshtml",
+      "TargetPath": "Pages\\Entities\\Cliente\\Detalles.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Entities\\Empresa\\Crear.cshtml",
+      "TargetPath": "Pages\\Entities\\Empresa\\Crear.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Entities\\Cliente\\Crear.cshtml",
+      "TargetPath": "Pages\\Entities\\Cliente\\Crear.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15659,23 +15704,53 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Entities\\Empresa\\Editar.cshtml",
+      "TargetPath": "Pages\\Entities\\Empresa\\Editar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Privacy.cshtml",
       "TargetPath": "Pages\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Entities\\Empleado\\Empleado.cshtml",
-      "TargetPath": "Pages\\Entities\\Empleado\\Empleado.cshtml",
+      "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Entities\\Producto\\Detalles.cshtml",
+      "TargetPath": "Pages\\Entities\\Producto\\Detalles.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Entities\\Cliente\\Cliente.cshtml",
-      "TargetPath": "Pages\\Entities\\Cliente\\Cliente.cshtml",
+      "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Entities\\Directivo\\Crear.cshtml",
+      "TargetPath": "Pages\\Entities\\Directivo\\Crear.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Entities\\Producto\\Crear.cshtml",
+      "TargetPath": "Pages\\Entities\\Producto\\Crear.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Entities\\Cliente\\Editar.cshtml",
+      "TargetPath": "Pages\\Entities\\Cliente\\Editar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Entities\\Empleado\\Crear.cshtml",
+      "TargetPath": "Pages\\Entities\\Empleado\\Crear.cshtml",
       "FileKind": "mvc"
     },
     {
       "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Entities\\Empresa\\Eliminar.cshtml",
+      "TargetPath": "Pages\\Entities\\Empresa\\Eliminar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Repositorio Mintic\\Ciclo 3\\Proyecto Ciclo 3\\WebApp\\Pages\\Entities\\Empleado\\Editar.cshtml",
+      "TargetPath": "Pages\\Entities\\Empleado\\Editar.cshtml",
       "FileKind": "mvc"
     }
   ],

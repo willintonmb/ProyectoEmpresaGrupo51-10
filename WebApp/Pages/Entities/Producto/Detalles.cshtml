@@ -1,0 +1,33 @@
+﻿@page
+@model MyApp.Namespace.DetallesProductoModel
+@{
+}
+<head>
+    <style>
+        tr {border-bottom: 1px solid #ddd;}
+    </style>
+</head>
+<body>
+    <h1>Listado de Productos</h1>
+    <table style="width:100%" class ="Table">
+        <tr>
+            <th>Nombre</th>
+            <th>Costo</th>
+            <th>Editar</th>
+            <th>Eliminar</th>
+        </tr>
+        @foreach (var producto in Model.Productos)
+        {
+            <tr>
+                <td>@producto.Nombre</td>
+                <td>@producto.Valor</td>
+                <td><a href="/Entities/Producto/Editar"><i class="fas fa-edit"></i></a></td>
+                <td><a href="/Entities/Producto/Eliminar"><i class="far fa-trash-alt"></i></a></td>
+            </tr>
+        }
+    </table>
+    <div>
+        <br>
+        <a href="/Entities/Producto/Crear">Crear Producto</a>
+    </div>
+</body>

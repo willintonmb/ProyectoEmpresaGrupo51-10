@@ -1,0 +1,35 @@
+﻿@page
+@model MyApp.Namespace.DetallesDirectivoModel
+@{
+}
+<head>
+    <style>
+        tr {border-bottom: 1px solid #ddd;}
+    </style>
+</head>
+<body>
+    <h1>Listado de Directivos</h1>
+    <table style="width:100%" class ="Table">
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Categoria</th>
+            <th>Editar</th>
+            <th>Eliminar</th>
+        </tr>
+        @foreach (var directivo in Model.Directivos)
+        {
+            <tr>
+                <td>@directivo.Nombre</td>
+                <td>@directivo.Edad</td>
+                <td>@directivo.Categoria</td>
+                <td><a href="/Entities/Directivo/Editar"><i class="fas fa-edit"></i></a></td>
+                <td><a href="/Entities/Directivo/Eliminar"><i class="far fa-trash-alt"></i></a></td>
+            </tr>
+        }
+    </table>
+    <div>
+        <br>
+        <a href="/Entities/Directivo/Crear">Crear Directivo</a>
+    </div>
+</body>

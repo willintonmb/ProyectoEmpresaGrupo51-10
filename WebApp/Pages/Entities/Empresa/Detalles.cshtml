@@ -1,0 +1,33 @@
+﻿@page
+@model MyApp.Namespace.DetallesEmpresaModel
+@{
+}
+<head>
+    <style>
+        tr {border-bottom: 1px solid #ddd;}
+    </style>
+</head>
+<body>
+    <h1>Listado de Empresas</h1>
+    <table style="width:100%" class ="Table">
+        <tr>
+            <th>Nombre</th>
+            <th>Nit</th>
+            <th>Editar</th>
+            <th>Eliminar</th>
+        </tr>
+        @foreach (var empresa in Model.Empresas)
+        {
+            <tr>
+                <td>@empresa.Nombre</td>
+                <td>@empresa.Nit</td>
+                <td><a href="/Entities/Empresa/Editar"><i class="fas fa-edit"></i></a></td>
+                <td><a href="/Entities/Empresa/Eliminar"><i class="far fa-trash-alt"></i></a></td>
+            </tr>
+        }
+    </table>
+    <div>
+        <br>
+        <a href="/Entities/Empresa/Crear">Crear Empresa</a>
+    </div>
+</body>

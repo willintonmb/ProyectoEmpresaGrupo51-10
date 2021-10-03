@@ -9,9 +9,9 @@ namespace Persistencia.Repositorios
 {
     public class ClienteRepository : IClienteRepository
     {
-        private readonly AppDbContext _appContext;
+        private readonly AppContext _appContext;
 
-        public ClienteRepository(AppDbContext appContext)
+        public ClienteRepository(AppContext appContext)
         {
             _appContext = appContext;
         }
@@ -52,7 +52,7 @@ namespace Persistencia.Repositorios
             {
                 clienteEncontrado.Nombre = cliente.Nombre;
                 clienteEncontrado.Documento = cliente.Documento;
-                clienteEncontrado.fechaDeNacimiento = cliente.fechaDeNacimiento;
+                clienteEncontrado.FechaDeNacimiento = cliente.FechaDeNacimiento;
                 clienteEncontrado.Telefono = cliente.Telefono;
                 _appContext.SaveChanges();
             }

@@ -51,11 +51,14 @@ namespace Persistencia.Migrations
                     b.Property<string>("Documento")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Edad")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("FechaDeNacimiento")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Nombre")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("fechaDeNacimiento")
-                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
@@ -70,6 +73,9 @@ namespace Persistencia.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
+
+                    b.Property<int>("IdEmpresa")
+                        .HasColumnType("int");
 
                     b.Property<string>("Nombre")
                         .HasColumnType("nvarchar(max)");
@@ -86,6 +92,10 @@ namespace Persistencia.Migrations
                 {
                     b.HasBaseType("Dominio.Persona");
 
+                    b.Property<int>("IdEmpresa")
+                        .HasColumnType("int")
+                        .HasColumnName("Cliente_IdEmpresa");
+
                     b.Property<string>("Telefono")
                         .HasColumnType("nvarchar(max)");
 
@@ -96,8 +106,11 @@ namespace Persistencia.Migrations
                 {
                     b.HasBaseType("Dominio.Persona");
 
-                    b.Property<int>("Salario")
+                    b.Property<int>("IdEmpresa")
                         .HasColumnType("int");
+
+                    b.Property<double>("Salario")
+                        .HasColumnType("float");
 
                     b.HasDiscriminator().HasValue("Empleado");
                 });
