@@ -16,7 +16,7 @@ namespace Persistencia
             if (!optionBuilder.IsConfigured)
             {
                 optionBuilder
-                .UseSqlServer("Data Source = DESKTOP-KCG6U4C\\SQLEXPRESS; Initial Catalog = Proyecto Ciclo 3; Integrated Security=True");
+                .UseSqlServer("Data Source = localhost\\SQLEXPRESS; Initial Catalog = Proyecto Ciclo 3; Integrated Security=True");
             }
         }
 
