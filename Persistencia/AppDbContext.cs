@@ -18,7 +18,7 @@ namespace Persistencia
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         { 
-            optionsBuilder.UseSqlServer("Data Source=DESKTOP-KCG6U4C\\SQLEXPRESS;Initial Catalog = Proyecto Ciclo 3;Integrated Security = True; MultipleActiveResultSets=true");
+            optionsBuilder.UseSqlServer("Data Source=localhost\\SQLEXPRESS;Initial Catalog = Proyecto Ciclo 3;Integrated Security = True; MultipleActiveResultSets=true");
         }
         public AppContext()
         {
