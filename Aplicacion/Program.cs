@@ -14,15 +14,19 @@ namespace Aplicacion
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            var empleadoCreado = CrearEmpleado();
-            Console.WriteLine(empleadoCreado.Nombre);
+            //var empleadoCreado = CrearEmpleado();
+            //Console.WriteLine(empleadoCreado.Nombre);
 
+            /*
             var empleados = ObtenerEmpleados();
             foreach(var empleado in empleados)
             {
                 Console.WriteLine(empleado);
             }
+            */
             
+            var empleadoPorId = ObtenerEmpleado();
+            Console.WriteLine(empleadoPorId.Nombre);
         }
 
         private static Empleado CrearEmpleado()
@@ -48,6 +52,14 @@ namespace Aplicacion
             }
             return listaEmpleados;
 
+        }
+
+        private static Empleado ObtenerEmpleado()
+        {
+            
+            var empleado = empleadosRepository.GetEmpleado(2);
+
+            return empleado;
         }
     }
 }
