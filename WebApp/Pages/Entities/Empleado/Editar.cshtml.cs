@@ -22,7 +22,19 @@ namespace MyApp.Namespace
         }
         public IActionResult OnGet(int empleadoId)
         {
-            Empleado = _empleadoRepository.GetEmpleado(empleadoId);
+
+            if (empleadoId != 0)
+            {
+                Empleado = _empleadoRepository.GetEmpleado(empleadoId);
+
+            }
+
+            else
+            {
+                Empleado = new Empleado();
+            }
+
+            
 
             if (Empleado == null)
             {
@@ -40,7 +52,18 @@ namespace MyApp.Namespace
 
         public IActionResult OnPost()
         {
-            Empleado = _empleadoRepository.UpdateEmpleado(Empleado);
+            if (Empleado.Id > 0)
+            {
+                Empleado = _empleadoRepository.UpdateEmpleado(Empleado);
+
+            }
+
+            else
+            {
+                _empleadoRepository.AddEmpleado(Empleado);
+            }
+
+            
             return Page();
 
         }
