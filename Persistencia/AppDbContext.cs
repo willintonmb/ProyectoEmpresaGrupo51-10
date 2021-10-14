@@ -18,7 +18,10 @@ namespace Persistencia
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         { 
-            optionsBuilder.UseSqlServer("Data Source=localhost\\SQLEXPRESS;Initial Catalog = Proyecto Ciclo 3;Integrated Security = True; MultipleActiveResultSets=true");
+            //Db local
+            //optionsBuilder.UseSqlServer("Data Source=localhost\\SQLEXPRESS;Initial Catalog = Proyecto Ciclo 3;Integrated Security = True; MultipleActiveResultSets=true");
+            //Db Azure
+            optionsBuilder.UseSqlServer("Server=tcp:fenixdevelopment.database.windows.net,1433;Initial Catalog=Proyecto Ciclo 3;Persist Security Info=False;User ID=WillintonMB;Password=C1a9m8b8*;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30");
         }
         public AppContext()
         {
