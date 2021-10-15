@@ -23,13 +23,13 @@
                 <td>@directivo.Nombre</td>
                 <td>@directivo.Edad</td>
                 <td>@directivo.Categoria</td>
-                <td><a href="/Entities/Directivo/Editar"><i class="fas fa-edit"></i></a></td>
-                <td><a href="/Entities/Directivo/Eliminar"><i class="far fa-trash-alt"></i></a></td>
+                <td><a asp-page="/Entities/Directivo/Editar" asp-route-directivoId="@directivo.Id"><i class="fas fa-edit"></i></a></td>
+                <td><a asp-page="/Entities/Directivo/Eliminar" asp-route-directivoId="@directivo.Id"><i class="far fa-trash-alt"></i></a></td>
             </tr>
         }
     </table>
     <div>
         <br>
-        <a href="/Entities/Directivo/Crear">Crear Directivo</a>
+        <a href="/Entities/Directivo/Editar" class="btn btn-primary">Crear Directivo</a>
     </div>
 </body>

@@ -21,13 +21,13 @@
             <tr>
                 <td>@producto.Nombre</td>
                 <td>@producto.Valor</td>
-                <td><a href="/Entities/Producto/Editar"><i class="fas fa-edit"></i></a></td>
-                <td><a href="/Entities/Producto/Eliminar"><i class="far fa-trash-alt"></i></a></td>
+                <td><a asp-page="/Entities/Producto/Editar" asp-route-productoId="@producto.Id"><i class="fas fa-edit"></i></a></td>
+                <td><a asp-page="/Entities/Producto/Eliminar" asp-route-productoId="@producto.Id"><i class="far fa-trash-alt"></i></a></td>
             </tr>
         }
     </table>
     <div>
         <br>
-        <a href="/Entities/Producto/Crear">Crear Producto</a>
+        <a href="/Entities/Producto/Editar" class="btn btn-primary">Crear Producto</a>
     </div>
 </body>

@@ -2,4 +2,20 @@
 @model MyApp.Namespace.EditarProductoModel
 @{
 }
-<h1>Editar Producto</h1>
+<h1>Editar Producto: @Model.Producto.Nombre</h1>
+<form method="post">
+    <input type="hidden" asp-for="Producto.Id"/>
+    <div class="form-group">
+        <label asp-for="Producto.Nombre"></label>
+        <input asp-for="Producto.Nombre" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="Producto.Valor"></label>
+        <input asp-for="Producto.Valor" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Grabar</button>
+
+</form>
+<br>
+<a asp-page="/Entities/Producto/Detalles" class="btn-default">Volver a productos</a>

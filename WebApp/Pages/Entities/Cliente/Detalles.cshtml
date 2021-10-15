@@ -25,14 +25,14 @@
                 <td>@cliente.Nombre</td>
                 <td>@cliente.Documento</td>
                 <td>@cliente.Telefono</td>
-                <td><a href="/Entities/Cliente/Editar"><i class="fas fa-edit"></i></a></td>
-                <td><a href="/Entities/Cliente/Eliminar"><i class="far fa-trash-alt"></i></a></td>
+                <td><a asp-page="/Entities/Cliente/Editar" asp-route-clienteId="@cliente.Id"><i class="fas fa-edit"></i></a></td>
+                <td><a asp-page="/Entities/Cliente/Eliminar" asp-route-clienteId="@cliente.Id"><i class="far fa-trash-alt"></i></a></td>
             </tr>
         }
     </table>
 
     <div>
         <br>
-        <a href="/Entities/Cliente/Crear">Crear Cliente</a>
+        <a href="/Entities/Cliente/Editar" class="btn btn-primary">Crear Cliente</a>
     </div>
 </body>
