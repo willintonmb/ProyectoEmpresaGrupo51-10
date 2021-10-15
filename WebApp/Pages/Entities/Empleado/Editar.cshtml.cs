@@ -51,7 +51,7 @@ namespace MyApp.Namespace
             {
                 _empleadoRepository.AddEmpleado(Empleado);
             }
-             return Page();
+            return RedirectToPage("./Detalles");
         }
     }
  }

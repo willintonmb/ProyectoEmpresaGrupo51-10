@@ -23,9 +23,10 @@ namespace MyApp.Namespace
             Directivo = _directivoRepository.GetDirectivo(directivoId);
         }
 
-        public void OnPost(int directivoId)
+        public IActionResult OnPost(int directivoId)
         {
             _directivoRepository.DeleteDirectivo(directivoId);
+            return RedirectToPage("./Detalles");
         }
     }
 }

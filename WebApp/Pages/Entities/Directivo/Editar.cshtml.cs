@@ -52,7 +52,7 @@ namespace MyApp.Namespace
             {
                 _directivoRepository.AddDirectivo(Directivo);
             }
-             return Page();
+            return RedirectToPage("./Detalles");
         }
     }
 }

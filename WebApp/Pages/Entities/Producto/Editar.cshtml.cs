@@ -51,7 +51,7 @@ namespace MyApp.Namespace
             {
                 _productoRepository.AddProducto(Producto);
             }
-             return Page();
+            return RedirectToPage("./Detalles");
         }
     }
 }

@@ -23,9 +23,10 @@ namespace MyApp.Namespace
             Cliente = _clienteRepository.GetCliente(clienteId);
         }
 
-        public void OnPost(int clienteId)
+        public IActionResult OnPost(int clienteId)
         {
             _clienteRepository.DeleteCliente(clienteId);
+            return RedirectToPage("./Detalles");
         }
     }
 }

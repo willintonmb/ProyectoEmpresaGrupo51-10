@@ -23,9 +23,10 @@ namespace MyApp.Namespace
             Producto = _productoRepository.GetProducto(productoId);
         }
 
-        public void OnPost(int productoId)
+        public IActionResult OnPost(int productoId)
         {
             _productoRepository.DeleteProducto(productoId);
+            return RedirectToPage("./Detalles");
         }
     }
 }

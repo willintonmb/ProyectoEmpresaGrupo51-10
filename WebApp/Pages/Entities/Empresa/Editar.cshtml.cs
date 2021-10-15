@@ -51,7 +51,7 @@ namespace MyApp.Namespace
             {
                 _empresaRepository.AddEmpresa(Empresa);
             }
-             return Page();
+            return RedirectToPage("./Detalles");
         }
     }
 }

@@ -52,7 +52,7 @@ namespace MyApp.Namespace
             {
                 _clienteRepository.AddCliente(Cliente);
             }
-             return Page();
+            return RedirectToPage("./Detalles");
         }
     }
 }

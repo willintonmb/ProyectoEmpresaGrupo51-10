@@ -23,9 +23,10 @@ namespace MyApp.Namespace
             Empleado = _empleadoRepository.GetEmpleado(empleadoId);
         }
 
-        public void OnPost(int empleadoId)
+        public IActionResult OnPost(int empleadoId)
         {
             _empleadoRepository.DeleteEmpleado(empleadoId);
+            return RedirectToPage("./Detalles");
         }
     }
 }

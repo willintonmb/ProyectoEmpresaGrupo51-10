@@ -23,9 +23,10 @@ namespace MyApp.Namespace
             Empresa = _empresaRepository.GetEmpresa(empresaId);
         }
 
-        public void OnPost(int empresaId)
+        public IActionResult OnPost(int empresaId)
         {
             _empresaRepository.DeleteEmpresa(empresaId);
+            return RedirectToPage("./Detalles");
         }
     }
 }
