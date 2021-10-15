@@ -21,13 +21,13 @@
             <tr>
                 <td>@empresa.Nombre</td>
                 <td>@empresa.Nit</td>
-                <td><a href="/Entities/Empresa/Editar"><i class="fas fa-edit"></i></a></td>
-                <td><a href="/Entities/Empresa/Eliminar"><i class="far fa-trash-alt"></i></a></td>
+                <td><a asp-page="/Entities/Empresa/Editar" asp-route-empresaId="@empresa.Id"><i class="fas fa-edit"></i></a></td>
+                <td><a asp-page="/Entities/Empresa/Eliminar" asp-route-empresaId="@empresa.Id"><i class="far fa-trash-alt"></i></a></td>
             </tr>
         }
     </table>
     <div>
         <br>
-        <a href="/Entities/Empresa/Crear">Crear Empresa</a>
+        <a href="/Entities/Empresa/Crear" class="btn btn-primary">Crear Empresa</a>
     </div>
 </body>

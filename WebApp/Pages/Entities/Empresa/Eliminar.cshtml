@@ -2,4 +2,18 @@
 @model MyApp.Namespace.EliminarEmpresaModel
 @{
 }
-<h1>Eliminar Empresa</h1>
+<h1>Eliminar Empresa </h1>
+<br/>
+<p>Está seguro de que desea eliminar esta empresa?</p>
+<br/>
+
+<div>
+     @Html.DisplayFor(model => model.Empresa.Nombre)
+</div>
+<br/>
+<br/>
+<br/>
+<form method="post">
+    <input type="hidden" asp-for="Empresa.Id" />
+    <input type="submit" value="Eliminar" class="btn btn-danger" />
+</form>
