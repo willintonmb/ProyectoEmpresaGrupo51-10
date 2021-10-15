@@ -12,7 +12,7 @@ namespace MyApp.Namespace
 {
     public class EliminarEmpleadoModel : PageModel
     {
-private readonly IEmpleadoRepository _empleadoRepository;
+        private readonly IEmpleadoRepository _empleadoRepository;
         public Empleado Empleado {get; set;}
         public EliminarEmpleadoModel(IEmpleadoRepository empleadoRepository)
         {

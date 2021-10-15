@@ -37,7 +37,7 @@ namespace WebApp
             services.AddRazorPages();
             services.AddControllersWithViews();
 
-            services.AddAuthentication().AddMicrosoftAccount(microsoftOptions =>
+            /*services.AddAuthentication().AddMicrosoftAccount(microsoftOptions =>
             {
                 microsoftOptions.ClientId = Configuration["Authentication:Microsoft:ClientId"];
                 microsoftOptions.ClientSecret = Configuration["Authentication:Microsoft:ClientSecret"];
@@ -56,7 +56,7 @@ namespace WebApp
             {
                 facebookOptions.AppId = Configuration["Authentication:Facebook:AppId"];
                 facebookOptions.AppSecret = Configuration["Authentication:Facebook:AppSecret"];
-            });
+            });*/
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
