@@ -23,7 +23,7 @@ namespace Persistencia.Repositorios
 
         void IEmpresaRepository.DeleteEmpresa(int idEmpresa)
         {
-            var empresaEncontrado = _appContext.Empresas.FirstOrDefault(x => x.Id == idEmpresa);
+            var empresaEncontrado = _appContext.Empresas.FirstOrDefault(x => x.IdEmpresa == idEmpresa);
             
             if (empresaEncontrado == null)
                 return;
@@ -39,12 +39,12 @@ namespace Persistencia.Repositorios
 
         Empresa IEmpresaRepository.GetEmpresa(int idEmpresa)
         {
-            return _appContext.Empresas.FirstOrDefault(x => x.Id == idEmpresa);
+            return _appContext.Empresas.FirstOrDefault(x => x.IdEmpresa == idEmpresa);
         }
 
         Empresa IEmpresaRepository.UpdateEmpresa(Empresa empresa)
         {
-            var empresaEncontrado = _appContext.Empresas.FirstOrDefault(x => x.Id == empresa.Id);
+            var empresaEncontrado = _appContext.Empresas.FirstOrDefault(x => x.IdEmpresa == empresa.IdEmpresa);
 
             if (empresaEncontrado != null)
             {

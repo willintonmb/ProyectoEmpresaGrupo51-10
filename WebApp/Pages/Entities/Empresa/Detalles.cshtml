@@ -21,8 +21,8 @@
             <tr>
                 <td>@empresa.Nombre</td>
                 <td>@empresa.Nit</td>
-                <td><a asp-page="/Entities/Empresa/Editar" asp-route-empresaId="@empresa.Id"><i class="fas fa-edit"></i></a></td>
-                <td><a asp-page="/Entities/Empresa/Eliminar" asp-route-empresaId="@empresa.Id"><i class="far fa-trash-alt"></i></a></td>
+                <td><a asp-page="/Entities/Empresa/Editar" asp-route-empresaId="@empresa.IdEmpresa"><i class="fas fa-edit"></i></a></td>
+                <td><a asp-page="/Entities/Empresa/Eliminar" asp-route-empresaId="@empresa.IdEmpresa"><i class="far fa-trash-alt"></i></a></td>
             </tr>
         }
     </table>

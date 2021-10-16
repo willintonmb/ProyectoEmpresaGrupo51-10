@@ -43,7 +43,7 @@ namespace MyApp.Namespace
 
         public IActionResult OnPost()
         {
-            if (Empresa.Id > 0)
+            if (Empresa.IdEmpresa > 0)
             {
                 Empresa = _empresaRepository.UpdateEmpresa(Empresa);
             }

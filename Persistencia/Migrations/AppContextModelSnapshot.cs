@@ -16,12 +16,12 @@ namespace Persistencia.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("ProductVersion", "5.0.10")
+                .HasAnnotation("ProductVersion", "5.0.11")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("Dominio.Empresa", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("IdEmpresa")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -34,7 +34,7 @@ namespace Persistencia.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("IdEmpresa");
 
                     b.ToTable("Empresas");
                 });
@@ -60,11 +60,16 @@ namespace Persistencia.Migrations
                     b.Property<DateTime>("FechaDeNacimiento")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("IdEmpresa")
+                        .HasColumnType("int");
+
                     b.Property<string>("Nombre")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("IdEmpresa");
 
                     b.ToTable("Personas");
 
@@ -90,6 +95,8 @@ namespace Persistencia.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("IdEmpresa");
+
                     b.ToTable("Productos");
                 });
 
@@ -97,12 +104,7 @@ namespace Persistencia.Migrations
                 {
                     b.HasBaseType("Dominio.Persona");
 
-                    b.Property<int>("IdEmpresa")
-                        .HasColumnType("int")
-                        .HasColumnName("Cliente_IdEmpresa");
-
                     b.Property<string>("Telefono")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasDiscriminator().HasValue("Cliente");
@@ -111,9 +113,6 @@ namespace Persistencia.Migrations
             modelBuilder.Entity("Dominio.Empleado", b =>
                 {
                     b.HasBaseType("Dominio.Persona");
-
-                    b.Property<int>("IdEmpresa")
-                        .HasColumnType("int");
 
                     b.Property<double>("Salario")
                         .HasColumnType("float");
@@ -126,10 +125,38 @@ namespace Persistencia.Migrations
                     b.HasBaseType("Dominio.Empleado");
 
                     b.Property<string>("Categoria")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasDiscriminator().HasValue("Directivo");
+                });
+
+            modelBuilder.Entity("Dominio.Persona", b =>
+                {
+                    b.HasOne("Dominio.Empresa", "Empresa")
+                        .WithMany("ListaPersonas")
+                        .HasForeignKey("IdEmpresa")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Empresa");
+                });
+
+            modelBuilder.Entity("Dominio.Producto", b =>
+                {
+                    b.HasOne("Dominio.Empresa", "Empresa")
+                        .WithMany("ListaProductos")
+                        .HasForeignKey("IdEmpresa")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Empresa");
+                });
+
+            modelBuilder.Entity("Dominio.Empresa", b =>
+                {
+                    b.Navigation("ListaPersonas");
+
+                    b.Navigation("ListaProductos");
                 });
 #pragma warning restore 612, 618
         }

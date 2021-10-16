@@ -1,11 +1,10 @@
-using System.ComponentModel.DataAnnotations;
+using System.Collections.Generic;
 
 namespace Dominio
 {
     public class Cliente:Persona
     {
-        [Required]
         public string Telefono {get; set;}
-        public int IdEmpresa { get; set; }
+        //public virtual ICollection<Cliente> ListaClientes {get; set;}
     }
 }
