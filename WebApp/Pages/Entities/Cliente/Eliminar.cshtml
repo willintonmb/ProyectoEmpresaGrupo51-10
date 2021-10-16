@@ -3,3 +3,16 @@
 @{
 }
 <h1>Eliminar Cliente</h1>
+<br/>
+<p>Está seguro de que desea eliminar este cliente?</p>
+<br/>
+
+<div>
+     @Html.DisplayFor(model => model.Cliente.Nombre)
+</div>
+<br/>
+
+<form method="post">
+    <input type="hidden" asp-for="Cliente.Id" />
+    <input type="submit" value="Eliminar" class="btn btn-danger" />
+</form>

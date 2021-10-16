@@ -3,4 +3,24 @@
 @{
 }
 
-    <h1>Editar Cliente</h1>
+<h1>Editar Cliente: @Model.Cliente.Nombre</h1>
+<form method="post">
+    <input type="hidden" asp-for="Cliente.Id"/>
+    <div class="form-group">
+        <label asp-for="Cliente.Nombre"></label>
+        <input asp-for="Cliente.Nombre" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="Cliente.Documento"></label>
+        <input asp-for="Cliente.Documento" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="Cliente.Telefono"></label>
+        <input asp-for="Cliente.Telefono" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Grabar</button>
+
+</form>
+<br>
+<a asp-page="/Entities/Cliente/Detalles" class="btn-default">Volver a clientes</a>

@@ -5,6 +5,7 @@ namespace Dominio
 {
     public class Persona
     {
+        [Required]
         public int Id {get; set;}
         [Required]
         public string Nombre {get; set;}
@@ -28,7 +29,11 @@ namespace Dominio
 
         private int CalcularEdad(DateTime fechaDeNacimiento)
         {
-            return DateTime.Now.Year - fechaDeNacimiento.Year;
+            var edad = DateTime.Now.Year - fechaDeNacimiento.Year;
+            if (fechaDeNacimiento > DateTime.Now.AddYears(-edad)) 
+                edad -= 1;
+
+            return edad ;
         }
     }
  

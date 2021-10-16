@@ -12,7 +12,7 @@ namespace MyApp.Namespace
 {
     public class EliminarEmpleadoModel : PageModel
     {
-private readonly IEmpleadoRepository _empleadoRepository;
+        private readonly IEmpleadoRepository _empleadoRepository;
         public Empleado Empleado {get; set;}
         public EliminarEmpleadoModel(IEmpleadoRepository empleadoRepository)
         {
@@ -23,9 +23,10 @@ private readonly IEmpleadoRepository _empleadoRepository;
             Empleado = _empleadoRepository.GetEmpleado(empleadoId);
         }
 
-        public void OnPost(int empleadoId)
+        public IActionResult OnPost(int empleadoId)
         {
             _empleadoRepository.DeleteEmpleado(empleadoId);
+            return RedirectToPage("./Detalles");
         }
     }
 }

@@ -1,7 +1,10 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace Dominio
 {
     public class Directivo : Empleado
     {
-        public int Categoria {get; set;}
+        [Required]
+        public string Categoria {get; set;}
     }
 }

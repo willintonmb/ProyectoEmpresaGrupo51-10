@@ -4,15 +4,14 @@
 }
 <h1>Eliminar Empleado </h1>
 <br/>
-<p>Está seguro de que desea eliminar esta persona?</p>
+<p>Está seguro de que desea eliminar este empleado?</p>
 <br/>
 
 <div>
      @Html.DisplayFor(model => model.Empleado.Nombre)
 </div>
 <br/>
-<br/>
-<br/>
+
 <form method="post">
     <input type="hidden" asp-for="Empleado.Id" />
     <input type="submit" value="Eliminar" class="btn btn-danger" />
