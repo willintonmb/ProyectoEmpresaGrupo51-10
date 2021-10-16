@@ -13,15 +13,21 @@ namespace MyApp.Namespace
     public class EditarProductoModel : PageModel
     {
         private readonly IProductoRepository _productoRepository;
+        private readonly IEmpresaRepository _empresaRepository;
 
         [BindProperty]
         public Producto Producto {get; set;}
-        public EditarProductoModel(IProductoRepository productoRepository)
+        public IEnumerable<Empresa> Empresas {get; set;}
+        public EditarProductoModel(IProductoRepository productoRepository, IEmpresaRepository empresaRepository)
         {
             _productoRepository = productoRepository;
+            _empresaRepository = empresaRepository;
         }
+
         public IActionResult OnGet(int productoId)
         {
+            Empresas = _empresaRepository.GetAllEmpresa();
+
             if (productoId != 0)
             {
                 Producto = _productoRepository.GetProducto(productoId);

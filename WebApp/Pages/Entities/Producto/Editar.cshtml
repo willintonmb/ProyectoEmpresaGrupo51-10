@@ -13,6 +13,15 @@
         <label asp-for="Producto.Valor"></label>
         <input asp-for="Producto.Valor" class="form-control">
     </div>
+    <div class="form-group">
+        <label >Empresa</label>
+        <select asp-for="Producto.IdEmpresa" class="form-control">
+            @foreach (var empresa in @Model.Empresas)
+            {
+                <option value=@empresa.IdEmpresa>@empresa.Nombre</option>
+            }  
+        </select>  
+    </div>
 
     <button type="submit" class="btn btn-primary">Grabar</button>
 

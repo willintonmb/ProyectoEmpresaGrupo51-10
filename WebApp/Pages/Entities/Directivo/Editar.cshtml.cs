@@ -13,15 +13,19 @@ namespace MyApp.Namespace
     public class EditarDirectivoModel : PageModel
     {
         private readonly IDirectivoRepository _directivoRepository;
+        private readonly IEmpresaRepository _empresaRepository;
 
         [BindProperty]
         public Directivo Directivo {get; set;}
-        public EditarDirectivoModel(IDirectivoRepository directivoRepository)
+        public IEnumerable<Empresa> Empresas {get; set;}
+        public EditarDirectivoModel(IDirectivoRepository directivoRepository, IEmpresaRepository empresaRepository)
         {
             _directivoRepository = directivoRepository;
+            _empresaRepository = empresaRepository;
         }
         public IActionResult OnGet(int directivoId)
         {
+            Empresas = _empresaRepository.GetAllEmpresa();
 
             if (directivoId != 0)
             {

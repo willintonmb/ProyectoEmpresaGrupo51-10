@@ -21,6 +21,15 @@
         <label asp-for="Empleado.FechaDeNacimiento"></label>
         <input asp-for="Empleado.FechaDeNacimiento" class="form-control">
     </div>
+    <div class="form-group">
+        <label >Empresa</label>
+        <select asp-for="Empleado.IdEmpresa" class="form-control">
+            @foreach (var empresa in @Model.Empresas)
+            {
+                <option value=@empresa.IdEmpresa>@empresa.Nombre</option>
+            }  
+        </select>  
+    </div>
 
     <button type="submit" class="btn btn-primary">Grabar</button>
 
