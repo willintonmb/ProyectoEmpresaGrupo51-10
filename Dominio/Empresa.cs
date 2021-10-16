@@ -15,6 +15,6 @@ namespace Dominio
 
         public virtual ICollection<Persona> ListaPersonas {get; set;}
 
-        public virtual ICollection<Producto> ListaProductos {get; set;}
+        public virtual ICollection<ProductoEmpresa> ProductoEmpresasLink {get; set;}
     }
 }

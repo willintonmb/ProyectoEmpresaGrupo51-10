@@ -28,5 +28,12 @@ namespace Persistencia
             
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<ProductoEmpresa>().HasKey(
+                pe => new {pe.IdProducto, pe.IdEmpresa}
+            );
+        }
+
     }
 }
